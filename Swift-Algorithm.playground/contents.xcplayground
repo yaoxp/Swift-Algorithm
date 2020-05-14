@@ -7,5 +7,6 @@
         <page name='Palindrome'/>
         <page name='Roman to integer'/>
         <page name='Longest common prefix'/>
+        <page name='valid parentheses'/>
     </pages>
 </playground>
