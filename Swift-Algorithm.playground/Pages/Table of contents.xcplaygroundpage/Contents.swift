@@ -11,4 +11,6 @@ leetcode homepage: https://leetcode-cn.com
  4. [Roman to integer](Roman%20to%20integer)
  5. [Longest common prefix](Longest%20common%20prefix)
  6. [valid parentheses](valid%20parentheses)
+ 7. [shu-zu-zhong-zhong-fu-de-shu-zi-lcof](shu-zu-zhong-zhong-fu-de-shu-zi-lcof)
+ 8. [largest number](largest%20number)
 */

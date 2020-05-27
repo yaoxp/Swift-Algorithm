@@ -8,5 +8,7 @@
         <page name='Roman to integer'/>
         <page name='Longest common prefix'/>
         <page name='valid parentheses'/>
+        <page name='shu-zu-zhong-zhong-fu-de-shu-zi-lcof'/>
+        <page name='largest number'/>
     </pages>
 </playground>
