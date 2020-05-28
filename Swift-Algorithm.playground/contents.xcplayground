@@ -11,5 +11,6 @@
         <page name='shu-zu-zhong-zhong-fu-de-shu-zi-lcof'/>
         <page name='largest number'/>
         <page name='add two numbers'/>
+        <page name='longest substring without repeating characters'/>
     </pages>
 </playground>
