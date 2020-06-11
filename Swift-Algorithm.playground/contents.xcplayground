@@ -12,5 +12,8 @@
         <page name='largest number'/>
         <page name='add two numbers'/>
         <page name='longest substring without repeating characters'/>
+        <page name='Untitled Page'/>
+        <page name='remove duplicates from sorted array'/>
+        <page name='travel binary tree'/>
     </pages>
 </playground>

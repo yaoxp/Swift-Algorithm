@@ -94,3 +94,25 @@ lengthOfLongestSubstring2("bbbbb")
 lengthOfLongestSubstring2("pwwkew")
 
 
+func sum(num: Int) -> Int {
+    guard num > 0 else { return 0 }
+    
+    return num + sum(num: num - 1)
+}
+
+func sum2(num: Int) -> Int {
+    let a = Double(1 + num) / 2.0
+    return Int(a * Double(num))
+}
+
+sum(num: 100)
+sum2(num: 100)
+
+sum(num: 39)
+sum2(num: 39)
+
+sum(num: 321)
+sum2(num: 321)
+
+sum(num: 1000)
+sum2(num: 1000)
