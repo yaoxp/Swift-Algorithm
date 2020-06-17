@@ -15,5 +15,6 @@
         <page name='Untitled Page'/>
         <page name='remove duplicates from sorted array'/>
         <page name='travel binary tree'/>
+        <page name='reverse-words-in-a-string'/>
     </pages>
 </playground>
