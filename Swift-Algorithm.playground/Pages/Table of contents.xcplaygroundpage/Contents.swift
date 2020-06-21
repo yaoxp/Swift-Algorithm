@@ -18,4 +18,5 @@ leetcode homepage: https://leetcode-cn.com
  11. [删除排序数据中的重复项](remove%20duplicates%20from%20sorted%20array)
  12. [二叉树遍历](travel%20binary%20tree)
  13. [翻转字符串里的单词](reverse-words-in-a-string)
+ 14. [删除链表中节点](delete-node-in-a-linked-list)
 */
