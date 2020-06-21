@@ -68,12 +68,12 @@ struct Queue: QueueProtocol {
     }
 }
 
-class TreeNode {
-    var value: Int
-    var left: TreeNode?
-    var right: TreeNode?
+class TreeNode<T> {
+    var value: T
+    var left: TreeNode<T>? = nil
+    var right: TreeNode<T>? = nil
     
-    init(value: Int, left: TreeNode? = nil, right: TreeNode? = nil) {
+    init(value: T, left: TreeNode? = nil, right: TreeNode? = nil) {
         self.value = value
         self.left = left
         self.right = right
@@ -88,9 +88,9 @@ let center = TreeNode(value: 3, left: left2, right: right2)
 
 //: 先序遍历
 //: 递归
-func preOrderTraversal(root: TreeNode) -> [Int] {
-    var array = [Int]()
-    func traversal(node: TreeNode?) {
+func preOrderTraversal<T>(root: TreeNode<T>) -> [T] {
+    var array = [T]()
+    func traversal(node: TreeNode<T>?) {
         guard let node = node else { return }
         
         array.append(node.value)
@@ -102,12 +102,12 @@ func preOrderTraversal(root: TreeNode) -> [Int] {
 }
 
 //: 非递归
-func preOrderTraversalStack(root: TreeNode) -> [Int] {
-    var array = [Int]()
+func preOrderTraversalStack<T>(root: TreeNode<T>) -> [T] {
+    var array = [T]()
     var stack = Stack()
     stack.push(root)
     while stack.isEmpty() == false {
-        if let node = stack.pop() as? TreeNode {
+        if let node = stack.pop() as? TreeNode<T> {
             array.append(node.value)
             if let rightNode = node.right {
                 stack.push(rightNode)
@@ -125,10 +125,10 @@ preOrderTraversalStack(root: center)
 
 //: 中序遍历
 //: 递归
-func inOrderTraversal(root: TreeNode) -> [Int] {
-    var array = [Int]()
+func inOrderTraversal<T>(root: TreeNode<T>) -> [T] {
+    var array = [T]()
     
-    func traversal(node: TreeNode?) {
+    func traversal(node: TreeNode<T>?) {
         guard let node = node else { return }
         if node.left == nil {
             array.append(node.value)
@@ -144,8 +144,8 @@ func inOrderTraversal(root: TreeNode) -> [Int] {
 }
 
 //: 栈
-func inOrderTraversalStack(root: TreeNode) -> [Int] {
-    var array = [Int]()
+func inOrderTraversalStack<T>(root: TreeNode<T>) -> [T] {
+    var array = [T]()
     var stack = Stack()
     var node: TreeNode? = root
     while node != nil || stack.isEmpty() == false {
@@ -164,10 +164,10 @@ inOrderTraversal(root: center)
 inOrderTraversalStack(root: center)
 
 //: 后序遍历 9,15,7,20,3
-func postOrderTraversal(root: TreeNode) -> [Int] {
-    var array = [Int]()
+func postOrderTraversal<T>(root: TreeNode<T>) -> [T] {
+    var array = [T]()
     
-    func traversal(node: TreeNode?) {
+    func traversal(node: TreeNode<T>?) {
         guard let node = node else { return }
         if node.left == nil && node.right == nil {
             array.append(node.value)
@@ -182,11 +182,11 @@ func postOrderTraversal(root: TreeNode) -> [Int] {
     traversal(node: root)
     return array
 }
-func postOrderTraversalStack(root: TreeNode) -> [Int] {
-    var array = [Int]()
+func postOrderTraversalStack<T>(root: TreeNode<T>) -> [T] {
+    var array = [T]()
     var stack = Stack()
-    var node: TreeNode? = root
-    var pre: TreeNode? = nil
+    var node: TreeNode<T>? = root
+    var pre: TreeNode<T>? = nil
     while node != nil || stack.isEmpty() == false {
         while node != nil {
             stack.push(node!)
@@ -210,15 +210,15 @@ postOrderTraversal(root: center)
 postOrderTraversalStack(root: center)
 
 //: 层次遍历
-func levelOrderTraversal(root: TreeNode) -> [Int] {
-    var array = [Int]()
+func levelOrderTraversal<T>(root: TreeNode<T>) -> [T] {
+    var array = [T]()
     
     var queue = Queue()
     queue.enqueue(root)
     var node = queue.dequeue()
     while node != nil {
         
-        let treeNode = node as! TreeNode
+        let treeNode = node as! TreeNode<T>
         array.append(treeNode.value)
         if treeNode.left != nil {
             queue.enqueue(treeNode.left!)
