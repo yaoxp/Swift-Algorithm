@@ -17,5 +17,6 @@
         <page name='travel binary tree'/>
         <page name='reverse-words-in-a-string'/>
         <page name='delete-node-in-a-linked-list'/>
+        <page name='array pivot index'/>
     </pages>
 </playground>
