@@ -8,6 +8,7 @@ leetcode homepage: https://leetcode-cn.com
  ### 数组
  - [数组中重复的数字](shu-zu-zhong-zhong-fu-de-shu-zi-lcof)
  - [寻找数组的中心索引](array%20pivot%20index)
+ - [搜索插入位置](search%20insert)
  
  ### 其它
  - [Sum of two numbers](Sum%20of%20two%20numbers)
