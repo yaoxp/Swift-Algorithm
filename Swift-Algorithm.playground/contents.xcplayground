@@ -19,5 +19,6 @@
         <page name='delete-node-in-a-linked-list'/>
         <page name='array pivot index'/>
         <page name='search insert'/>
+        <page name='merge inteval'/>
     </pages>
 </playground>
