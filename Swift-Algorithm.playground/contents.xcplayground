@@ -20,5 +20,6 @@
         <page name='array pivot index'/>
         <page name='search insert'/>
         <page name='merge inteval'/>
+        <page name='matrix rotate'/>
     </pages>
 </playground>

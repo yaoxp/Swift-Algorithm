@@ -10,6 +10,7 @@ leetcode homepage: https://leetcode-cn.com
  - [寻找数组的中心索引](array%20pivot%20index)
  - [搜索插入位置](search%20insert)
  - [合并区间](merge%20inteval)
+ - [矩阵旋转](matrix%20rotate)
  
  ### 其它
  - [Sum of two numbers](Sum%20of%20two%20numbers)
