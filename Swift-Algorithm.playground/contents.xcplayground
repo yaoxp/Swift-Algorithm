@@ -21,5 +21,6 @@
         <page name='search insert'/>
         <page name='merge inteval'/>
         <page name='matrix rotate'/>
+        <page name='set zeroes'/>
     </pages>
 </playground>
