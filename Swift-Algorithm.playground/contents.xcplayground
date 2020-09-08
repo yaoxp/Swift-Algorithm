@@ -22,5 +22,6 @@
         <page name='merge inteval'/>
         <page name='matrix rotate'/>
         <page name='set zeroes'/>
+        <page name='findDiagonalOrder'/>
     </pages>
 </playground>

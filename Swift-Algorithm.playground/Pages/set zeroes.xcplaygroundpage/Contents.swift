@@ -42,7 +42,7 @@
 import Foundation
 
 func setZeroes(_ matrix: inout [[Int]]) {
-    //: 执行用时： **144 ms**, 在所有 Swift 提交中击败了**100.00%**的用户
+//: 执行用时： **144 ms**, 在所有 Swift 提交中击败了**100.00%**的用户
     var indexs = [[Int]]()
 
     for i in 0..<matrix.count {
