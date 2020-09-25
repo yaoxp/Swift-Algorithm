@@ -23,5 +23,6 @@
         <page name='matrix rotate'/>
         <page name='set zeroes'/>
         <page name='findDiagonalOrder'/>
+        <page name='longestPalindrome'/>
     </pages>
 </playground>
